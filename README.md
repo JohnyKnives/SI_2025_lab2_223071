@@ -7,16 +7,22 @@ Control Flow Graph
 
 Тест случаи според every statement
 
-allItems = null Се праќа без аргументи и програмата фрла exception 
-allItems = {null,10,0,0}  Се праќаат сите аргументи без Name фрла exception
-allItems = {("name",100,0,4),("name",380,7,2)}, cardNumber=null  Се праќаат валидни аргументи за items но cardNumber фрла exception
-allItems = VALID, cardNumber = 12343218901234AB  се праќа cardNumber со букви и фрла exception
-allItems = VALID, cardNumber = VALID  се испраќаат валидни информации и завршува
+  allItems = null Се праќа без аргументи и програмата фрла exception 
+
+  allItems = {null,10,0,0}  Се праќаат сите аргументи без Name фрла exception
+
+  allItems = {("name",100,0,4),("name",380,7,2)}, cardNumber=null  Се праќаат валидни аргументи за items но cardNumber фрла exception
+
+  allItems = VALID, cardNumber = 12343218901234AB  се праќа cardNumber со букви и фрла exception
+
+  allItems = VALID, cardNumber = VALID  се испраќаат валидни информации и завршува
 
 Со овие 5 тест случаи се поминува низ сите statements во методата.
 
 Тест случаи според критериум Multiple Condition
+
 if (item.getPrice() > 300 || item.getDiscount() > 0 || item.getQuantity() > 10)
+
 ![image](https://github.com/user-attachments/assets/b34d3688-68e2-47ee-a5f5-23c8afaa50bb)
 
 FXX - ако барем еден од производите има помала или вредност од 300.
